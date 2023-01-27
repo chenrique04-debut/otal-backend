@@ -1,0 +1,3 @@
+npx sequelize-cli migration:generate --name alterarUsuario
+npx sequelize-cli db:migrate
+npx sequelize-cli model:generate --name horarios --attributes diaDaSemana:enum:'{seg,ter,qua,qui,sex}',horaInicial:date,horafinal:date,user_id:integer
